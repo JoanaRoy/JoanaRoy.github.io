@@ -17,3 +17,7 @@ Run node build.js or npm run build to copy the website into dist/. Publish that 
 ## Pages and navigation
 
 The homepage contains the introduction. About, Information, Education, and Contact each have a separate HTML page and open in a new browser tab from the navigation. The Home link returns within the current tab. Edit the matching HTML file for each page.
+
+## Visual design
+
+Dark charcoal panels, gold accents, a profile sidebar, and an education timeline inspired by the supplied reference screenshot. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
