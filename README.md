@@ -13,3 +13,7 @@ School years are reproduced from the resume without claiming graduation. Songkit
 ## Build and hosting
 
 Run node build.js or npm run build to copy the website into dist/. Publish that directory to a static host. The .openai/hosting.json file retains the existing private Sites project.
+
+## Pages and navigation
+
+The homepage contains the introduction. About, Information, Education, and Contact each have a separate HTML page and open in a new browser tab from the navigation. The Home link returns within the current tab. Edit the matching HTML file for each page.
