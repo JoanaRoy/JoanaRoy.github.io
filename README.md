@@ -1,6 +1,6 @@
 # Joana Rose D. Roy - Personal Portfolio
 
-A responsive portfolio using Joana's supplied resume information: an introduction, personal background, education, and email and phone contact links. No resume photo is included. The original fictional projects and skills have been removed.
+A responsive portfolio using Joana's supplied resume information: an introduction, personal background, education, and email and phone contact links. The About section includes the separately supplied portrait in assets/joana-rose-roy.jpg. The original fictional projects and skills have been removed.
 
 Open index.html in a browser. No installation is required. Google Fonts is optional; system fonts are used when offline.
 
