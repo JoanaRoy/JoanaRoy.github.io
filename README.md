@@ -21,3 +21,5 @@ The homepage contains the introduction. About, Information, Education, and Conta
 ## Visual design
 
 Dark charcoal panels, gold accents, a profile sidebar, and an education timeline inspired by the supplied reference screenshot. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
+
+The latest layout uses a full-height sidebar with icon navigation, a circular portrait, large page headings, and outlined cards with folded corners. The charcoal-and-gold palette is retained; the new reference image is used for layout only.
