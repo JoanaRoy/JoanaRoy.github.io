@@ -18,3 +18,5 @@ Responsive layouts, category filters, keyboard-accessible project dialogs, mobil
 ## Hosting
 
 Upload `index.html`, `styles.css`, and `portfolio.js` to any static website host. No server, API keys, or environment variables are needed.
+
+For hosts that expect a build directory, run `node build.js` (or `npm run build`) and publish `dist/`. The `.openai/hosting.json` file links this project to its private Sites preview.
