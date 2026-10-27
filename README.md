@@ -23,3 +23,11 @@ The homepage contains the introduction. About, Information, Education, and Conta
 A light minimalist palette with warm white backgrounds, soft gray surfaces, charcoal text, and muted gray-green accents. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
 
 The latest layout uses a full-height sidebar with icon navigation, a circular portrait, large page headings, and outlined cards with folded corners. The reference image is used for layout only; the palette is light and minimal.
+
+## Sage UI refinements
+
+Palette: Deep Forest #303D35, Sage Green #788B75, Soft Sage #E8EEE5, Warm White #FAFAF7, and Muted Gold #C8AD78. The home page focuses on the introduction with About Me and View Resume links. Desktop navigation stays fixed while scrolling; mobile uses a collapsible menu. Equal-height cards have soft shadows, green highlights, and reduced-motion-aware hover lifts.
+
+## About Me page
+
+The About page contains six sections: introduction, four overview cards, My Journey in IT, What I Enjoy, Educational Background, and View My Resume. Interests, goals, and strengths use the supplied content. Expected graduation is 2027, as confirmed by the user; original school years are retained. No certifications, internships, achievements, or completed projects are fabricated.
