@@ -20,4 +20,4 @@ The homepage contains the introduction. About, Information, Education, and Conta
 
 ## Visual design
 
-Dark charcoal panels, gold accents, a profile sidebar, and an education timeline inspired by the supplied reference screenshot. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
+A minimal charcoal, white, and soft gray palette with flat surfaces, a profile sidebar, and an education timeline. The layout is inspired by the supplied reference screenshot. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
