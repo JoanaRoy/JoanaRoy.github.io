@@ -6,8 +6,11 @@ const navLinks = [...navigation.querySelectorAll('.nav-link')];
 const mobileLayout = window.matchMedia('(max-width: 700px)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let scrollFrame = 0;
+let activeSectionId = null;
 
 function setActiveSection(id) {
+  if (activeSectionId === id) return;
+  activeSectionId = id;
   navLinks.forEach(link => {
     const active = link.getAttribute('href') === '#' + id;
     link.classList.toggle('active', active);
