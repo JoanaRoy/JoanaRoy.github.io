@@ -1,33 +1,17 @@
-# Joana Rose D. Roy - Personal Portfolio
+# Joana Rose D. Roy - Single-page Portfolio
 
-A responsive portfolio using Joana's supplied resume information: an introduction, personal background, education, and email and phone contact links. The About section includes the separately supplied portrait in assets/joana-rose-roy.jpg. The original fictional projects and skills have been removed.
+Open index.html directly in a browser or serve the project with a static web server. No installation is required.
 
-Open index.html in a browser. No installation is required. Google Fonts is optional; system fonts are used when offline.
+## Content and navigation
 
-## Editing
+All portfolio content is in index.html, in five sections: Home (#home), About (#about), Information (#information), Resume (#resume), and Contact (#contact). Sidebar links, cards, and buttons scroll within the page. The current section is highlighted as you scroll. Browser back/forward and direct hash links are supported.
 
-Update personal details, education, biography, and contact links in index.html. The age updates automatically from the supplied January 16, 2004 birth date in portfolio.js. Colors and layout are in styles.css.
+The sage-and-white palette, typography, fixed desktop sidebar, and original portrait are preserved. On mobile, the profile header stays available with a collapsible menu. Smooth scrolling and hover effects respect reduced-motion preferences.
 
-School years are reproduced from the resume without claiming graduation. Songkit Elementary School is categorized as Elementary.
+The old about.html, information.html, education.html, and contact.html files contain compatibility redirects only. Old bookmarks open the corresponding section of index.html.
 
-## Build and hosting
+## Editing and building
 
-Run node build.js or npm run build to copy the website into dist/. Publish that directory to a static host. The .openai/hosting.json file retains the existing private Sites project.
+Edit the content in index.html, styles in styles.css, and navigation behavior in portfolio.js. Run node build.js (or npm run build) to copy the static site and portrait into dist/. The .openai/hosting.json file retains the existing private Sites project.
 
-## Pages and navigation
-
-The homepage contains the introduction. About, Information, Education, and Contact each have a separate HTML page and open in a new browser tab from the navigation. The Home link returns within the current tab. Edit the matching HTML file for each page.
-
-## Visual design
-
-A light minimalist palette with warm white backgrounds, soft gray surfaces, charcoal text, and muted gray-green accents. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
-
-The latest layout uses a full-height sidebar with icon navigation, a circular portrait, large page headings, and outlined cards with folded corners. The reference image is used for layout only; the palette is light and minimal.
-
-## Sage UI refinements
-
-Palette: Deep Forest #303D35, Sage Green #788B75, Soft Sage #E8EEE5, Warm White #FAFAF7, and Muted Gold #C8AD78. The home page focuses on the introduction with About Me and View Resume links. Desktop navigation stays fixed while scrolling; mobile uses a collapsible menu. Equal-height cards have soft shadows, green highlights, and reduced-motion-aware hover lifts.
-
-## About Me page
-
-The About page contains six sections: introduction, four overview cards, My Journey in IT, What I Enjoy, Educational Background, and View My Resume. Interests, goals, and strengths use the supplied content. Expected graduation is 2027, as confirmed by the user; original school years are retained. No certifications, internships, achievements, or completed projects are fabricated.
+Expected graduation is 2027, as confirmed by Joana. School years match the supplied resume. The age is computed from the supplied January 16, 2004 birthday.
