@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Joana Rose D. Roy - Single-page Portfolio
 
 Open index.html directly in a browser or serve the project with a static web server. No installation is required.
@@ -21,3 +22,38 @@ Expected graduation is 2027, as confirmed by Joana. School years match the suppl
 Technical Skills currently presents the supplied technical interests as learning areas, without proficiency claims. Projects features this actual portfolio with its HTML, CSS, and JavaScript stack. Replace or expand these entries in index.html when additional details are available.
 
 The Resume heading and desktop sidebar download assets/joana-rose-roy-resume.pdf, a one-page resume made from the confirmed profile and education. To update it, edit resume.html, open it in Chrome, print with Save as PDF (A4, background graphics on, headers/footers off), and replace that asset before running node build.js. The existing build copies the PDF into dist/assets automatically.
+=======
+# Joana Rose D. Roy - Personal Portfolio
+
+A responsive portfolio using Joana's supplied resume information: an introduction, personal background, education, and email and phone contact links. The About section includes the separately supplied portrait in assets/joana-rose-roy.jpg. The original fictional projects and skills have been removed.
+
+Open index.html in a browser. No installation is required. Google Fonts is optional; system fonts are used when offline.
+
+## Editing
+
+Update personal details, education, biography, and contact links in index.html. The age updates automatically from the supplied January 16, 2004 birth date in portfolio.js. Colors and layout are in styles.css.
+
+School years are reproduced from the resume without claiming graduation. Songkit Elementary School is categorized as Elementary.
+
+## Build and hosting
+
+Run node build.js or npm run build to copy the website into dist/. Publish that directory to a static host. The .openai/hosting.json file retains the existing private Sites project.
+
+## Pages and navigation
+
+The homepage contains the introduction. About, Information, Education, and Contact each have a separate HTML page and open in a new browser tab from the navigation. The Home link returns within the current tab. Edit the matching HTML file for each page.
+
+## Visual design
+
+A light minimalist palette with warm white backgrounds, soft gray surfaces, charcoal text, and muted gray-green accents. All content and the portrait belong to Joana; no experience, skills, or social profiles were copied from the reference.
+
+The latest layout uses a full-height sidebar with icon navigation, a circular portrait, large page headings, and outlined cards with folded corners. The reference image is used for layout only; the palette is light and minimal.
+
+## Sage UI refinements
+
+Palette: Deep Forest #303D35, Sage Green #788B75, Soft Sage #E8EEE5, Warm White #FAFAF7, and Muted Gold #C8AD78. The home page focuses on the introduction with About Me and View Resume links. Desktop navigation stays fixed while scrolling; mobile uses a collapsible menu. Equal-height cards have soft shadows, green highlights, and reduced-motion-aware hover lifts.
+
+## About Me page
+
+The About page contains six sections: introduction, four overview cards, My Journey in IT, What I Enjoy, Educational Background, and View My Resume. Interests, goals, and strengths use the supplied content. Expected graduation is 2027, as confirmed by the user; original school years are retained. No certifications, internships, achievements, or completed projects are fabricated.
+>>>>>>> origin/main
