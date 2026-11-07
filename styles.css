@@ -214,3 +214,198 @@ h1,h2,h3{color:var(--forest)}
 @media(max-width:700px){.single-page-main{padding-top:26px}.portfolio-section{padding-top:35px;padding-bottom:35px}.sidebar-download{display:none}.sidebar #navigation{gap:5px}.sidebar .nav-link{font-size:13px;min-height:44px}.home-section .welcome{padding-top:2px;padding-bottom:24px}.home-section .welcome .eyebrow{font-size:8px;letter-spacing:1px;margin-bottom:14px}.home-section .welcome h1{font-size:49px;letter-spacing:-1.9px;margin-bottom:17px}.professional-subtitle{font-size:14px}.academic-subtitle{font-size:10px;max-width:390px;margin-bottom:12px}.home-section .welcome .lead{font-size:12px;line-height:1.85;margin-bottom:8px}.hero-location{font-size:10px;margin-bottom:17px}.home-section .hero-actions .button{padding:10px 14px;font-size:10px;min-width:115px}.home-section .section-intro{gap:10px;margin-bottom:13px}.home-section .section-intro h2{font-size:18px}.home-section .section-intro>span{font-size:7px}.home-section .feature-card{min-height:92px;align-items:center}.home-section .feature-card h3{font-size:13px}.home-section .feature-card p{font-size:10px}.skill-card{padding:23px 21px;gap:14px}.skill-card h3{font-size:15px}.skill-card p{font-size:12px}.project-copy{padding:25px 22px}.project-copy h3{font-size:21px}.project-preview{padding:25px}.preview-content{padding:20px 15px}.preview-name{font-size:25px}.preview-tiles{grid-template-columns:1fr 1fr}.resume-download{padding:11px 15px;font-size:11px;gap:10px}}
 @media(max-width:540px){.home-section .feature-grid{grid-template-columns:1fr;gap:10px}.home-section .feature-card{min-height:82px;padding:16px 30px 16px 19px;gap:15px}.home-section .feature-card h3{font-size:14px}.home-section .feature-card p{font-size:11px}.home-section .feature-icon svg{width:23px;height:23px}.home-section .feature-icon{margin-top:0}.home-section .feature-card:after{width:26px;height:26px}}
 @media(max-width:360px){.home-section .welcome h1{font-size:44px}.professional-subtitle{font-size:13px}.home-section .section-intro{align-items:flex-start;flex-direction:column;gap:4px}.home-section .section-intro>span{font-size:8px}}
+
+/* Team capstone preview uses the existing white project card treatment. */
+.project-card + .project-card{margin-top:22px}
+.project-preview--screenshot{padding:20px;align-items:center;justify-content:center}
+.project-preview--screenshot img{display:block;width:100%;height:auto;max-width:100%;border:1px solid var(--border);border-radius:12px}
+@media(max-width:700px){.project-preview--screenshot{padding:15px}.project-card + .project-card{margin-top:18px}}
+
+/* Plain-text personal quote with the existing portfolio typography. */
+.about-introduction .page-heading>p strong{color:#63775f;font-weight:500}
+.about-intro-copy{max-width:760px}
+.about-introduction{margin-bottom:28px}
+.about-quote{margin:18px 0 0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;text-align:left}
+.about-quote-heading{display:flex;align-items:center;gap:9px;color:#63775f;font-size:9px;font-weight:500;letter-spacing:1.4px;margin-bottom:8px}
+.about-quote-heading svg{width:18px;height:18px;flex-shrink:0}
+.about-quote blockquote{margin:0}
+.about-quote blockquote p{margin:0;font-size:20px;font-weight:500;line-height:1.6;letter-spacing:-.2px;color:var(--forest)}
+.about-quote figcaption{margin-top:8px;font-size:11px;color:#5e6b60}
+@media(max-width:700px){.about-introduction{margin-bottom:23px}.about-quote{padding:0;margin-top:16px}.about-quote blockquote p{font-size:17px;line-height:1.7}.about-quote-heading{font-size:8px;letter-spacing:1.1px}.about-quote figcaption{font-size:10px}}
+
+/* Keep both application documents accessible in the existing download area. */
+.application-downloads{display:flex;flex-wrap:wrap;gap:10px;min-width:0}
+.application-downloads .button{font-size:11px;padding:12px 16px;gap:8px}
+@media(max-width:540px){.application-downloads{width:100%}.application-downloads .button{flex:1 1 150px;justify-content:center}}
+
+/* Compact spacing is scoped to Contact to preserve every other section. */
+#contact{min-height:0;padding-bottom:24px}
+#contact .page-heading{margin-bottom:18px}
+#contact .page-kicker{margin-bottom:10px}
+#contact .page-title-row{gap:10px}
+#contact .page-heading>p{margin-top:8px}
+#contact .contact-cards{margin-top:0;gap:12px}
+#contact .contact-card{min-height:0;padding:15px 22px;gap:20px}
+#contact .contact-card p{margin-top:2px}
+@media(max-width:700px){
+  #contact{padding-bottom:20px}
+  #contact .page-heading{margin-bottom:14px}
+  #contact .page-kicker{margin-bottom:8px}
+  #contact .page-heading>p{margin-top:6px}
+  #contact .contact-cards{gap:10px}
+  #contact .contact-card{padding:13px 16px;gap:13px}
+}
+
+/* Consistent white surfaces and restrained decoration throughout the portfolio. */
+.single-page-main :is(.feature-card,.about-overview-card,.about-journey-panel,.about-enjoy-grid>li,.personal-details,.skill-card,.project-card,.project-preview,.preview-content,.preview-sidebar,.resume-card,.contact-card){background:#FFFFFF;border-color:var(--border);box-shadow:0 2px 10px #303d3505}
+.single-page-main :is(.feature-card,.about-overview-card,.about-enjoy-grid>li,.skill-card,.project-card,.resume-card,a.contact-card):hover{box-shadow:0 5px 16px #303d350a;transform:translateY(-2px)}
+.single-page .content-panel::before,.single-page .content-panel::after,.single-page-main .feature-card::after,.single-page-main .resume-card::after{content:none}
+#about .about-section{margin-bottom:32px}
+#about .about-introduction{margin-bottom:26px}
+#about .about-introduction .page-heading{margin-bottom:16px}
+#about .about-introduction .page-kicker{margin-bottom:10px}
+#about .about-introduction .page-heading>p{margin-top:10px}
+#about .about-intro-copy{max-width:72ch;text-align:left}
+#about .about-intro-copy>p{line-height:1.85;margin-bottom:12px}
+#about .about-quote{max-width:65ch}
+#about .about-quote blockquote p{font-size:clamp(17px,1.5vw,20px);font-weight:450;line-height:1.65;letter-spacing:0}
+#about .about-quote-heading{color:var(--forest)}
+#about .about-section-heading{margin-bottom:10px}
+#about .about-section-description{margin-bottom:16px}
+#about .about-overview-grid{gap:18px}
+#about .about-card-heading{margin-bottom:14px}
+#about .about-overview-card p:last-child{margin-bottom:0}
+#about .about-journey-panel{border-left-width:1px;border-radius:18px;margin-top:16px}
+#about .about-enjoy-grid{margin-top:16px}
+#about .about-intro-copy mark{background:transparent;padding:0;color:var(--forest)}
+@media(max-width:700px){
+  #about .about-section{margin-bottom:26px}
+  #about .about-introduction{margin-bottom:22px}
+  #about .about-introduction .page-heading{margin-bottom:14px}
+  #about .about-introduction .page-heading>p{margin-top:8px}
+  #about .about-overview-grid{gap:14px}
+  #about .about-intro-copy>p{line-height:1.85}
+}
+
+/* Editorial portfolio: shared type, rhythm, and quiet white surfaces. */
+:root{--forest:#293B32;--sage:#829382;--warm-white:#FAFAF7;--background:#FAFAF7;--card-background:#FFFFFF;--border:#e0e3dd;--muted:#637067;--editorial-radius:16px}
+.single-page .single-page-main{max-width:1280px;padding:42px clamp(28px,4vw,64px) 30px}
+.single-page .portfolio-section{padding:48px 0}
+.single-page .portfolio-section:first-child{padding-top:0}
+.single-page .page-heading{margin-bottom:24px}
+.single-page .page-kicker{font-size:10px;font-weight:500;letter-spacing:1.8px;gap:10px;margin-bottom:12px;color:var(--sage)}
+.single-page .page-kicker>span{font-size:12px;transform:none;letter-spacing:.5px}
+.single-page .page-kicker i{width:30px;height:1px;background:var(--sage)}
+.single-page .page-title-row>h2{font-size:clamp(29px,2.8vw,40px);font-weight:550;letter-spacing:-1.2px;line-height:1.2}
+.single-page .page-heading>p{font-size:13px;line-height:1.75;margin-top:10px;max-width:60ch}
+.single-page .button{border-radius:10px;font-size:11px;padding:11px 16px;min-height:42px}
+.single-page .header-action{border-width:1px}
+.single-page-main :is(.feature-card,.about-overview-card,.about-journey-panel,.about-enjoy-grid>li,.personal-details,.skill-card,.project-card,.resume-card,.contact-card){border-radius:var(--editorial-radius);box-shadow:0 2px 8px #293b3204;background:#fff}
+.single-page-main :is(.feature-card,.about-overview-card,.about-enjoy-grid>li,.skill-card,.project-card,.resume-card,a.contact-card){transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.single-page-main :is(.feature-card,.about-overview-card,.about-enjoy-grid>li,.skill-card,.project-card,.resume-card,a.contact-card):hover{transform:translateY(-2px);border-color:#bcc7bc;box-shadow:0 6px 18px #293b3208}
+.single-page .sidebar .nav-link{border-radius:11px;transition:background .2s,color .2s,transform .2s}
+.single-page .sidebar .role-tag{background:#fff}
+/* A composed hero: name on the left, introduction and actions on the right. */
+.home-section .welcome{display:grid;grid-template-columns:1.1fr 1fr;column-gap:36px;align-items:start;padding:8px 0 34px}
+.home-section .welcome .eyebrow{grid-column:1/-1;margin-bottom:22px;font-size:9px;letter-spacing:1.8px}
+.home-section .welcome h1{grid-column:1;grid-row:2/5;font-size:clamp(44px,4.6vw,68px);font-weight:550;letter-spacing:-2.8px;line-height:1.06;margin:0}
+.home-section .welcome .lead{grid-column:2;grid-row:2;font-size:14px;line-height:1.85;margin:3px 0 10px;max-width:36ch}
+.home-section .welcome .hero-location{grid-column:2;grid-row:3;margin:0 0 20px;font-size:10px}
+.home-section .welcome .hero-actions{grid-column:2;grid-row:4;flex-wrap:wrap;gap:8px}
+.home-section .hero-actions .button{min-width:0;padding:10px 13px}
+.home-section .section-intro{padding-top:24px;border-top:1px solid var(--border);margin-bottom:16px}
+.home-section .section-intro h2{font-size:17px;font-weight:500;letter-spacing:-.3px}
+.home-section .feature-card{min-height:88px;padding:17px 30px 17px 19px}
+.home-section .feature-card h3{font-weight:500;font-size:13px}
+/* About pairs the personal introduction with a quiet editorial pull quote. */
+#about .about-introduction .page-heading{margin-bottom:22px}
+#about .about-introduction .page-heading>p{max-width:none}
+#about .about-introduction .page-heading>p strong{color:var(--muted);font-size:13px}
+.about-intro-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:36px;align-items:center}
+#about .about-intro-copy{max-width:60ch;min-width:0}
+#about .about-intro-copy>p{font-size:13px;line-height:1.85;margin-bottom:12px}
+#about .about-intro-copy>p:last-child{margin-bottom:0}
+#about .about-intro-copy .about-intro-lead{font-size:14px;line-height:1.85}
+#about .about-quote{margin:0;padding:0;max-width:none;min-width:0;background:none;border:0;box-shadow:none}
+#about .about-quote-heading{font-size:8px;letter-spacing:1.5px;color:var(--sage);margin-bottom:12px}
+#about .about-quote-heading svg{width:21px;height:21px}
+#about .about-quote blockquote p{font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2vw,30px);font-style:italic;font-weight:400;line-height:1.45;letter-spacing:-.5px;color:var(--forest)}
+#about .about-quote figcaption{margin-top:13px;font-size:10px;color:var(--muted)}
+#about .about-section{margin-bottom:32px}
+#about .about-introduction{margin-bottom:32px}
+#about .about-section-heading{gap:10px;margin-bottom:8px}
+#about .about-section-heading h3{font-size:21px;font-weight:550;letter-spacing:-.6px}
+#about .about-section-icon svg{width:21px;height:21px}
+#about .about-section-number{font-size:9px;color:var(--sage)}
+#about .about-section-description{font-size:11px;margin-bottom:16px}
+#about .about-overview-grid{grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:auto;gap:14px}
+#about .about-overview-card{grid-column:span 5;padding:21px;min-width:0}
+#about .about-overview-card:nth-child(1),#about .about-overview-card:nth-child(4){grid-column:span 7}
+#about .about-card-heading{gap:10px;margin-bottom:12px}
+#about .about-card-heading h4{font-size:14px;font-weight:550;line-height:1.5}
+#about .about-card-icon svg{width:20px;height:20px}
+#about .about-overview-card .about-degree{font-size:13px;line-height:1.75}
+#about .about-overview-card p,#about .about-list{font-size:11px;line-height:1.85}
+#about .about-list li{margin-bottom:3px}
+#about .about-chips{gap:7px}
+#about .about-chips li{background:#fff;border-radius:8px;padding:6px 9px;font-size:10px}
+#about .about-journey-panel{padding:23px 25px}
+#about .about-journey-panel p{max-width:78ch;font-size:12px;line-height:1.85;margin-bottom:10px}
+#about .about-journey-panel .about-journey-highlight{font-size:20px;letter-spacing:-.4px;margin-bottom:12px}
+#about .about-journey-panel p:last-child{margin-bottom:0}
+#about .about-enjoy-grid li{min-height:110px;padding:20px;gap:12px}
+/* Carry the same proportion and rhythm through the remaining sections. */
+.single-page .skills-grid,.single-page .resume-grid{gap:16px}
+.single-page .skill-card{padding:23px;gap:15px}
+.single-page .skill-card h3{font-size:15px;letter-spacing:-.2px}
+.single-page .skill-card p{line-height:1.8;margin-bottom:12px}
+.single-page .project-copy{padding:26px}
+.single-page .project-copy h3{font-size:22px;font-weight:550;letter-spacing:-.6px}
+.single-page .project-copy>p{line-height:1.85}
+.single-page .resume-card{padding:24px}
+.single-page .card-heading{font-size:19px;letter-spacing:-.4px;gap:12px}
+.single-page .card-heading svg{width:26px;height:26px}
+.single-page .timeline{margin-top:22px}
+.single-page .timeline h4{font-size:14px}
+.single-page .timeline p,.single-page .timeline-year{font-size:12px}
+.single-page .personal-details>div{padding-top:18px;padding-bottom:18px}
+#contact .contact-cards{gap:10px}
+#contact .contact-card{padding:14px 20px;gap:18px}
+#contact .contact-card h3{font-size:17px}
+@media(max-width:1100px){
+ .home-section .welcome{grid-template-columns:1fr;gap:0}
+ .home-section .welcome h1{grid-column:1;grid-row:auto;font-size:54px;margin-bottom:18px}
+ .home-section .welcome :is(.lead,.hero-location,.hero-actions){grid-column:1;grid-row:auto}
+ .home-section .welcome .lead{max-width:50ch}
+ .about-intro-layout{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px}
+ #about .about-overview-card,#about .about-overview-card:nth-child(1),#about .about-overview-card:nth-child(4){grid-column:span 6}
+}
+@media(min-width:701px) and (max-width:900px){.about-intro-layout{grid-template-columns:1fr;gap:22px}#about .about-quote{max-width:46ch}#about .about-quote blockquote p{font-size:25px}#about .about-overview-card{padding:18px}#about .about-card-heading{align-items:flex-start}}
+@media(max-width:700px){
+ .single-page .single-page-main{padding:28px 22px 22px}
+ .single-page .portfolio-section{padding:34px 0}
+ .single-page .page-title-row>h2{font-size:32px;letter-spacing:-.9px}
+ .single-page .page-heading{margin-bottom:20px}
+ .single-page .page-title-row{gap:14px}
+ .home-section .welcome{padding-bottom:26px}
+ .home-section .welcome h1{font-size:50px;letter-spacing:-2px}
+ .home-section .welcome .eyebrow{margin-bottom:18px}
+ .home-section .welcome .lead{font-size:13px}
+ .home-section .section-intro{padding-top:20px}
+ .about-intro-layout{grid-template-columns:1fr;gap:22px}
+ #about .about-intro-copy>p{font-size:12px}
+ #about .about-intro-copy .about-intro-lead{font-size:13px}
+ #about .about-quote{max-width:48ch}
+ #about .about-quote blockquote p{font-size:26px;line-height:1.45}
+ #about .about-introduction{margin-bottom:28px}
+ #about .about-section-heading h3{font-size:20px}
+ #about .about-overview-card{padding:20px}
+ #about .about-journey-panel{padding:21px}
+ #about .about-enjoy-grid li{padding:18px;min-height:108px}
+ .single-page .resume-card,.single-page .skill-card{padding:22px 20px}
+ #contact .contact-card{padding:13px 16px;gap:13px}
+ #contact .contact-card h3{font-size:14px}
+ #contact{padding-bottom:20px}
+}
+@media(max-width:540px){#about .about-overview-grid{grid-template-columns:minmax(0,1fr)}#about .about-overview-card,#about .about-overview-card:nth-child(1),#about .about-overview-card:nth-child(4){grid-column:auto}.home-section .welcome h1{font-size:46px}.single-page .page-title-row>h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.single-page-main :is(.feature-card,.about-overview-card,.about-enjoy-grid>li,.skill-card,.project-card,.resume-card,a.contact-card):hover{transform:none}}

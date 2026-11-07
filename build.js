@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 
-const files = ['index.html', 'about.html', 'information.html', 'education.html', 'contact.html', 'styles.css', 'portfolio.js'];
+const files = ['index.html', 'about.html', 'information.html', 'education.html', 'contact.html', 'resume.html', 'ojt-resume.html', 'styles.css', 'portfolio.js'];
 const source = new Map(files.map(file => [file, fs.readFileSync(path.join(__dirname, file), 'utf8')]));
 
 // Fail before copying anything if an empty entry point or merge conflict would
